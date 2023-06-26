@@ -1,7 +1,15 @@
 package com.flurent.exception;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.beans.ConversionNotSupportedException;
+import org.springframework.beans.TypeMismatchException;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.converter.HttpMessageNotReadableException;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
@@ -40,6 +48,47 @@ public class FluRentExceptionHandler extends ResponseEntityExceptionHandler {
 		return buildResponseEntity(error);
 	
 	}
+	
 
+	@Override
+	protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException exception,
+			HttpHeaders headers, HttpStatus status, WebRequest request) {
 
+		List<String> errors = exception.getBindingResult().getFieldErrors().stream().map(e->e.getDefaultMessage()).collect(Collectors.toList()); 
+		
+		ApiResponseError error = new ApiResponseError(HttpStatus.BAD_REQUEST, errors.get(0), request.getDescription(false));
+		
+		return buildResponseEntity(error);
+		
+		
+	}
+
+	@Override
+	protected ResponseEntity<Object> handleTypeMismatch(TypeMismatchException exception, HttpHeaders headers,
+			HttpStatus status, WebRequest request) {
+		ApiResponseError error = new ApiResponseError(HttpStatus.BAD_REQUEST, exception.getMessage(), request.getDescription(false));
+		
+		return buildResponseEntity(error);
+	
+	}
+
+	@Override
+	protected ResponseEntity<Object> handleConversionNotSupported(ConversionNotSupportedException exception,
+			HttpHeaders headers, HttpStatus status, WebRequest request) {
+		ApiResponseError error = new ApiResponseError(HttpStatus.INTERNAL_SERVER_ERROR, exception.getMessage(), request.getDescription(false));
+		
+		return buildResponseEntity(error);
+	}
+	
+	
+	@Override
+	protected ResponseEntity<Object> handleHttpMessageNotReadable(HttpMessageNotReadableException exception,
+			HttpHeaders headers, HttpStatus status, WebRequest request) {
+		ApiResponseError error = new ApiResponseError(HttpStatus.BAD_REQUEST, exception.getMessage(), request.getDescription(false));
+		
+		return buildResponseEntity(error);
+	
+	}
+	
+	
 }
