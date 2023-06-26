@@ -1,34 +1,294 @@
-2023-06-21 01:16:24,733 INFO  [restartedMain] com.flurent.FluRentApplication:Starting FluRentApplication using Java 17.0.1 on Furkan-Notebook with PID 10532 (C:\Users\Furkan\git\FluRent\target\classes started by Furkan in C:\Users\Furkan\git\FluRent)
-2023-06-21 01:16:24,735 DEBUG [restartedMain] com.flurent.FluRentApplication:Running with Spring Boot v2.7.12, Spring v5.3.27
-2023-06-21 01:16:24,736 INFO  [restartedMain] com.flurent.FluRentApplication:No active profile set, falling back to 1 default profile: "default"
-2023-06-21 01:16:24,835 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-06-21 01:16:24,836 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-06-21 01:16:26,468 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-21 01:16:26,493 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
-2023-06-21 01:16:27,600 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
-2023-06-21 01:16:27,619 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
-2023-06-21 01:16:27,620 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-06-21 01:16:27,786 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
-2023-06-21 01:16:27,786 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 2947 ms
-2023-06-21 01:16:28,396 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-21 01:16:28,535 INFO  [restartedMain] org.hibernate.Version:HHH000412: Hibernate ORM core version 5.6.15.Final
-2023-06-21 01:16:28,885 INFO  [restartedMain] org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-06-21 01:16:29,087 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
-2023-06-21 01:16:29,384 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Start completed.
-2023-06-21 01:16:29,420 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2023-06-21 01:16:29,979 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-21 01:16:30,003 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-21 01:16:30,123 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-21 01:16:31,074 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
-2023-06-21 01:16:31,082 INFO  [restartedMain] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:Exposing 1 endpoint(s) beneath base path '/actuator'
-2023-06-21 01:16:31,194 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path ''
-2023-06-21 01:16:31,226 INFO  [restartedMain] com.flurent.FluRentApplication:Started FluRentApplication in 7.257 seconds (JVM running for 8.782)
-2023-06-21 01:16:31,505 INFO  [RMI TCP Connection(3)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-06-21 01:16:31,506 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
-2023-06-21 01:16:31,508 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 1 ms
-2023-06-21 01:19:37,699 INFO  [RMI TCP Connection(6)-127.0.0.1] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:Application shutdown requested.
-2023-06-21 01:19:37,727 INFO  [RMI TCP Connection(6)-127.0.0.1] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
-2023-06-21 01:19:37,730 INFO  [RMI TCP Connection(6)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-06-21 01:19:37,753 INFO  [RMI TCP Connection(6)-127.0.0.1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-21 01:19:37,764 INFO  [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
-2023-06-21 01:19:37,769 INFO  [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
+2023-06-26 01:29:24,923 INFO  [restartedMain] com.flurent.FluRentApplication:Starting FluRentApplication using Java 17.0.1 on Furkan-Notebook with PID 12292 (C:\Users\Furkan\git\FluRent\target\classes started by Furkan in C:\Users\Furkan\git\FluRent)
+2023-06-26 01:29:24,945 DEBUG [restartedMain] com.flurent.FluRentApplication:Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-26 01:29:24,957 INFO  [restartedMain] com.flurent.FluRentApplication:No active profile set, falling back to 1 default profile: "default"
+2023-06-26 01:29:25,120 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-26 01:29:25,121 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-26 01:29:27,703 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-26 01:29:27,919 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 182 ms. Found 1 JPA repository interfaces.
+2023-06-26 01:29:29,751 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2023-06-26 01:29:29,777 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2023-06-26 01:29:29,777 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-26 01:29:29,935 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2023-06-26 01:29:29,935 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 4811 ms
+2023-06-26 01:29:30,458 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-26 01:29:30,569 INFO  [restartedMain] org.hibernate.Version:HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-06-26 01:29:30,902 INFO  [restartedMain] org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-26 01:29:31,167 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
+2023-06-26 01:29:31,554 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Start completed.
+2023-06-26 01:29:31,597 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-26 01:29:33,036 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-26 01:29:33,054 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-26 01:29:33,538 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-26 01:29:34,453 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2023-06-26 01:29:34,463 INFO  [restartedMain] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-26 01:29:34,567 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-26 01:29:34,606 INFO  [restartedMain] com.flurent.FluRentApplication:Started FluRentApplication in 10.978 seconds (JVM running for 13.092)
+2023-06-26 01:29:37,419 INFO  [RMI TCP Connection(3)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-26 01:29:37,420 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2023-06-26 01:29:37,422 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 2 ms
+2023-06-26 01:31:15,863 INFO  [RMI TCP Connection(6)-127.0.0.1] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:Application shutdown requested.
+2023-06-26 01:31:15,886 INFO  [RMI TCP Connection(6)-127.0.0.1] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2023-06-26 01:31:15,888 INFO  [RMI TCP Connection(6)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-26 01:31:15,899 INFO  [RMI TCP Connection(6)-127.0.0.1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-26 01:31:15,905 INFO  [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
+2023-06-26 01:31:15,914 INFO  [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
+2023-06-26 01:31:23,610 INFO  [restartedMain] com.flurent.FluRentApplication:Starting FluRentApplication using Java 17.0.1 on Furkan-Notebook with PID 10668 (C:\Users\Furkan\git\FluRent\target\classes started by Furkan in C:\Users\Furkan\git\FluRent)
+2023-06-26 01:31:23,611 DEBUG [restartedMain] com.flurent.FluRentApplication:Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-26 01:31:23,612 INFO  [restartedMain] com.flurent.FluRentApplication:No active profile set, falling back to 1 default profile: "default"
+2023-06-26 01:31:23,670 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-26 01:31:23,670 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-26 01:31:24,725 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-26 01:31:24,780 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+2023-06-26 01:31:25,440 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2023-06-26 01:31:25,449 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2023-06-26 01:31:25,449 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-26 01:31:25,538 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2023-06-26 01:31:25,539 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 1868 ms
+2023-06-26 01:31:25,821 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-26 01:31:25,869 INFO  [restartedMain] org.hibernate.Version:HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-06-26 01:31:26,034 INFO  [restartedMain] org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-26 01:31:26,141 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
+2023-06-26 01:31:26,339 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Start completed.
+2023-06-26 01:31:26,357 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-26 01:31:27,140 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-26 01:31:27,152 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-26 01:31:27,534 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-26 01:31:28,117 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2023-06-26 01:31:28,123 INFO  [restartedMain] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-26 01:31:28,182 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-26 01:31:28,200 INFO  [restartedMain] com.flurent.FluRentApplication:Started FluRentApplication in 5.077 seconds (JVM running for 5.995)
+2023-06-26 01:31:30,830 INFO  [RMI TCP Connection(3)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-26 01:31:30,831 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2023-06-26 01:31:30,832 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 1 ms
+2023-06-26 01:32:46,776 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-26 01:32:46,795 INFO  [Thread-5] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2023-06-26 01:32:46,796 INFO  [Thread-5] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-26 01:32:46,808 INFO  [Thread-5] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-26 01:32:46,813 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
+2023-06-26 01:32:46,818 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
+2023-06-26 01:32:46,914 INFO  [restartedMain] com.flurent.FluRentApplication:Starting FluRentApplication using Java 17.0.1 on Furkan-Notebook with PID 10668 (C:\Users\Furkan\git\FluRent\target\classes started by Furkan in C:\Users\Furkan\git\FluRent)
+2023-06-26 01:32:46,915 DEBUG [restartedMain] com.flurent.FluRentApplication:Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-26 01:32:46,915 INFO  [restartedMain] com.flurent.FluRentApplication:No active profile set, falling back to 1 default profile: "default"
+2023-06-26 01:32:47,408 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-26 01:32:47,418 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interfaces.
+2023-06-26 01:32:47,560 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2023-06-26 01:32:47,561 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2023-06-26 01:32:47,562 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-26 01:32:47,582 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2023-06-26 01:32:47,582 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 664 ms
+2023-06-26 01:32:47,656 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-26 01:32:47,662 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Starting...
+2023-06-26 01:32:47,835 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Start completed.
+2023-06-26 01:32:47,836 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-26 01:32:47,900 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-26 01:32:47,900 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-26 01:32:47,976 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-26 01:32:48,052 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Invalid mapping on handler class [com.flurent.controller.ContactMessageController]: public org.springframework.http.ResponseEntity com.flurent.controller.ContactMessageController.getMessage(java.lang.Long)
+2023-06-26 01:32:48,053 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-26 01:32:48,054 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Shutdown initiated...
+2023-06-26 01:32:48,068 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Shutdown completed.
+2023-06-26 01:32:48,069 INFO  [restartedMain] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2023-06-26 01:32:48,081 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-26 01:32:48,108 ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Invalid mapping pattern detected: /{/id}
+  ^
+Expected close capture character after variable name }
+
+Action:
+
+Fix this pattern in your application or switch to the legacy parser implementation with 'spring.mvc.pathmatch.matching-strategy=ant_path_matcher'.
+
+2023-06-26 01:33:21,097 INFO  [restartedMain] com.flurent.FluRentApplication:Starting FluRentApplication using Java 17.0.1 on Furkan-Notebook with PID 10668 (C:\Users\Furkan\git\FluRent\target\classes started by Furkan in C:\Users\Furkan\git\FluRent)
+2023-06-26 01:33:21,097 DEBUG [restartedMain] com.flurent.FluRentApplication:Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-26 01:33:21,097 INFO  [restartedMain] com.flurent.FluRentApplication:No active profile set, falling back to 1 default profile: "default"
+2023-06-26 01:33:21,358 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-26 01:33:21,368 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interfaces.
+2023-06-26 01:33:21,468 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2023-06-26 01:33:21,469 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2023-06-26 01:33:21,469 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-26 01:33:21,489 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2023-06-26 01:33:21,489 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 390 ms
+2023-06-26 01:33:21,552 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-26 01:33:21,559 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-3 - Starting...
+2023-06-26 01:33:21,630 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-3 - Start completed.
+2023-06-26 01:33:21,631 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-26 01:33:21,685 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-26 01:33:21,685 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-26 01:33:21,757 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-26 01:33:21,937 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2023-06-26 01:33:21,942 INFO  [restartedMain] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-26 01:33:21,971 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-26 01:33:21,984 INFO  [restartedMain] com.flurent.FluRentApplication:Started FluRentApplication in 0.918 seconds (JVM running for 119.779)
+2023-06-26 01:33:21,989 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2023-06-26 01:33:29,360 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-26 01:33:29,360 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2023-06-26 01:33:29,362 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 2 ms
+2023-06-26 01:34:11,524 WARN  [http-nio-8080-exec-3] org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver:Resolved [com.flurent.exception.ResourceNotFoundException: Resource with this id 2 not found]
+2023-06-26 01:37:35,570 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-26 01:37:35,588 INFO  [Thread-7] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2023-06-26 01:37:35,589 INFO  [Thread-7] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]:Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-26 01:37:35,593 INFO  [Thread-7] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-26 01:37:35,595 INFO  [Thread-7] com.zaxxer.hikari.HikariDataSource:HikariPool-3 - Shutdown initiated...
+2023-06-26 01:37:35,600 INFO  [Thread-7] com.zaxxer.hikari.HikariDataSource:HikariPool-3 - Shutdown completed.
+2023-06-26 01:37:35,684 INFO  [restartedMain] com.flurent.FluRentApplication:Starting FluRentApplication using Java 17.0.1 on Furkan-Notebook with PID 10668 (C:\Users\Furkan\git\FluRent\target\classes started by Furkan in C:\Users\Furkan\git\FluRent)
+2023-06-26 01:37:35,685 DEBUG [restartedMain] com.flurent.FluRentApplication:Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-26 01:37:35,685 INFO  [restartedMain] com.flurent.FluRentApplication:No active profile set, falling back to 1 default profile: "default"
+2023-06-26 01:37:35,971 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-26 01:37:35,979 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2023-06-26 01:37:36,073 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2023-06-26 01:37:36,074 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2023-06-26 01:37:36,074 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-26 01:37:36,090 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2023-06-26 01:37:36,090 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 403 ms
+2023-06-26 01:37:36,151 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-26 01:37:36,155 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-4 - Starting...
+2023-06-26 01:37:36,217 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-4 - Start completed.
+2023-06-26 01:37:36,219 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-26 01:37:36,268 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-26 01:37:36,268 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-26 01:37:36,346 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-26 01:37:36,536 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2023-06-26 01:37:36,540 INFO  [restartedMain] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-26 01:37:36,561 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-26 01:37:36,572 INFO  [restartedMain] com.flurent.FluRentApplication:Started FluRentApplication in 0.922 seconds (JVM running for 374.367)
+2023-06-26 01:37:36,576 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2023-06-26 01:38:52,230 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-26 01:38:52,231 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2023-06-26 01:38:52,232 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 1 ms
+2023-06-26 01:44:40,417 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-26 01:44:40,433 INFO  [Thread-14] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2023-06-26 01:44:40,433 INFO  [Thread-14] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]:Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-26 01:44:40,437 INFO  [Thread-14] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-26 01:44:40,438 INFO  [Thread-14] com.zaxxer.hikari.HikariDataSource:HikariPool-4 - Shutdown initiated...
+2023-06-26 01:44:40,445 INFO  [Thread-14] com.zaxxer.hikari.HikariDataSource:HikariPool-4 - Shutdown completed.
+2023-06-26 01:44:40,536 INFO  [restartedMain] com.flurent.FluRentApplication:Starting FluRentApplication using Java 17.0.1 on Furkan-Notebook with PID 10668 (C:\Users\Furkan\git\FluRent\target\classes started by Furkan in C:\Users\Furkan\git\FluRent)
+2023-06-26 01:44:40,536 DEBUG [restartedMain] com.flurent.FluRentApplication:Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-26 01:44:40,537 INFO  [restartedMain] com.flurent.FluRentApplication:No active profile set, falling back to 1 default profile: "default"
+2023-06-26 01:44:40,819 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-26 01:44:40,826 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2023-06-26 01:44:40,926 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2023-06-26 01:44:40,927 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2023-06-26 01:44:40,927 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-26 01:44:40,943 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2023-06-26 01:44:40,943 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 404 ms
+2023-06-26 01:44:41,009 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-26 01:44:41,014 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-5 - Starting...
+2023-06-26 01:44:41,073 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-5 - Start completed.
+2023-06-26 01:44:41,073 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-26 01:44:41,123 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-26 01:44:41,124 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-26 01:44:41,195 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-26 01:44:41,363 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2023-06-26 01:44:41,368 INFO  [restartedMain] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-26 01:44:41,388 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-26 01:44:41,398 INFO  [restartedMain] com.flurent.FluRentApplication:Started FluRentApplication in 0.896 seconds (JVM running for 799.193)
+2023-06-26 01:44:41,401 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2023-06-26 01:49:35,767 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-26 01:49:35,767 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2023-06-26 01:49:35,771 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 3 ms
+2023-06-26 01:54:16,292 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-26 01:54:16,308 INFO  [Thread-18] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2023-06-26 01:54:16,308 INFO  [Thread-18] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]:Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-26 01:54:16,312 INFO  [Thread-18] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-26 01:54:16,314 INFO  [Thread-18] com.zaxxer.hikari.HikariDataSource:HikariPool-5 - Shutdown initiated...
+2023-06-26 01:54:16,321 INFO  [Thread-18] com.zaxxer.hikari.HikariDataSource:HikariPool-5 - Shutdown completed.
+2023-06-26 01:54:16,408 INFO  [restartedMain] com.flurent.FluRentApplication:Starting FluRentApplication using Java 17.0.1 on Furkan-Notebook with PID 10668 (C:\Users\Furkan\git\FluRent\target\classes started by Furkan in C:\Users\Furkan\git\FluRent)
+2023-06-26 01:54:16,408 DEBUG [restartedMain] com.flurent.FluRentApplication:Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-26 01:54:16,408 INFO  [restartedMain] com.flurent.FluRentApplication:No active profile set, falling back to 1 default profile: "default"
+2023-06-26 01:54:16,702 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-26 01:54:16,710 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2023-06-26 01:54:16,835 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2023-06-26 01:54:16,835 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2023-06-26 01:54:16,835 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-26 01:54:16,851 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2023-06-26 01:54:16,851 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 440 ms
+2023-06-26 01:54:16,920 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-26 01:54:16,925 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-6 - Starting...
+2023-06-26 01:54:16,984 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-6 - Start completed.
+2023-06-26 01:54:16,985 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-26 01:54:17,042 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-26 01:54:17,043 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-26 01:54:17,121 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-26 01:54:17,335 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2023-06-26 01:54:17,339 INFO  [restartedMain] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-26 01:54:17,361 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-26 01:54:17,374 INFO  [restartedMain] com.flurent.FluRentApplication:Started FluRentApplication in 0.997 seconds (JVM running for 1375.169)
+2023-06-26 01:54:17,378 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2023-06-26 01:54:33,854 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-26 01:54:33,855 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2023-06-26 01:54:33,857 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 2 ms
+2023-06-26 02:00:04,516 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-26 02:00:04,534 INFO  [Thread-22] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2023-06-26 02:00:04,534 INFO  [Thread-22] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]:Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-26 02:00:04,539 INFO  [Thread-22] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-26 02:00:04,540 INFO  [Thread-22] com.zaxxer.hikari.HikariDataSource:HikariPool-6 - Shutdown initiated...
+2023-06-26 02:00:04,543 INFO  [Thread-22] com.zaxxer.hikari.HikariDataSource:HikariPool-6 - Shutdown completed.
+2023-06-26 02:00:04,660 INFO  [restartedMain] com.flurent.FluRentApplication:Starting FluRentApplication using Java 17.0.1 on Furkan-Notebook with PID 10668 (C:\Users\Furkan\git\FluRent\target\classes started by Furkan in C:\Users\Furkan\git\FluRent)
+2023-06-26 02:00:04,661 DEBUG [restartedMain] com.flurent.FluRentApplication:Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-26 02:00:04,661 INFO  [restartedMain] com.flurent.FluRentApplication:No active profile set, falling back to 1 default profile: "default"
+2023-06-26 02:00:05,372 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-26 02:00:05,385 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+2023-06-26 02:00:05,539 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2023-06-26 02:00:05,540 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2023-06-26 02:00:05,540 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-26 02:00:05,565 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2023-06-26 02:00:05,565 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 901 ms
+2023-06-26 02:00:05,654 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-26 02:00:05,660 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-7 - Starting...
+2023-06-26 02:00:05,847 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-7 - Start completed.
+2023-06-26 02:00:05,848 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-26 02:00:05,929 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-26 02:00:05,930 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-26 02:00:06,031 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-26 02:00:06,356 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2023-06-26 02:00:06,368 INFO  [restartedMain] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-26 02:00:06,402 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-26 02:00:06,413 INFO  [restartedMain] com.flurent.FluRentApplication:Started FluRentApplication in 1.807 seconds (JVM running for 1724.209)
+2023-06-26 02:00:06,416 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2023-06-26 02:13:00,597 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-26 02:13:00,617 INFO  [Thread-26] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2023-06-26 02:13:00,623 INFO  [Thread-26] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-26 02:13:00,624 INFO  [Thread-26] com.zaxxer.hikari.HikariDataSource:HikariPool-7 - Shutdown initiated...
+2023-06-26 02:13:00,632 INFO  [Thread-26] com.zaxxer.hikari.HikariDataSource:HikariPool-7 - Shutdown completed.
+2023-06-26 02:13:00,741 INFO  [restartedMain] com.flurent.FluRentApplication:Starting FluRentApplication using Java 17.0.1 on Furkan-Notebook with PID 10668 (C:\Users\Furkan\git\FluRent\target\classes started by Furkan in C:\Users\Furkan\git\FluRent)
+2023-06-26 02:13:00,741 DEBUG [restartedMain] com.flurent.FluRentApplication:Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-26 02:13:00,741 INFO  [restartedMain] com.flurent.FluRentApplication:No active profile set, falling back to 1 default profile: "default"
+2023-06-26 02:13:01,110 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-26 02:13:01,120 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interfaces.
+2023-06-26 02:13:01,240 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2023-06-26 02:13:01,241 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2023-06-26 02:13:01,241 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-26 02:13:01,257 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2023-06-26 02:13:01,257 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 514 ms
+2023-06-26 02:13:01,330 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-26 02:13:01,335 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-8 - Starting...
+2023-06-26 02:13:01,397 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-8 - Start completed.
+2023-06-26 02:13:01,397 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-26 02:13:01,455 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-26 02:13:01,455 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-26 02:13:01,542 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-26 02:13:01,778 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2023-06-26 02:13:01,788 INFO  [restartedMain] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-26 02:13:01,814 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-26 02:13:01,828 INFO  [restartedMain] com.flurent.FluRentApplication:Started FluRentApplication in 1.127 seconds (JVM running for 2499.623)
+2023-06-26 02:13:01,830 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2023-06-26 02:17:14,285 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-26 02:17:14,286 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2023-06-26 02:17:14,287 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 1 ms
+2023-06-26 02:22:20,211 WARN  [http-nio-8080-exec-9] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'org.springframework.data.domain.Sort$Direction'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam org.springframework.data.domain.Sort$Direction] for value [DES]; nested exception is java.lang.IllegalArgumentException: No enum constant org.springframework.data.domain.Sort.Direction.DES]
+2023-06-26 02:22:27,107 WARN  [http-nio-8080-exec-1] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'org.springframework.data.domain.Sort$Direction'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam org.springframework.data.domain.Sort$Direction] for value [DSC]; nested exception is java.lang.IllegalArgumentException: No enum constant org.springframework.data.domain.Sort.Direction.DSC]
+2023-06-26 02:31:39,399 INFO  [RMI TCP Connection(66)-127.0.0.1] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:Application shutdown requested.
+2023-06-26 02:31:39,421 INFO  [RMI TCP Connection(66)-127.0.0.1] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2023-06-26 02:31:39,422 INFO  [RMI TCP Connection(66)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]:Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-26 02:31:39,428 INFO  [RMI TCP Connection(66)-127.0.0.1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-26 02:31:39,429 INFO  [RMI TCP Connection(66)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-8 - Shutdown initiated...
+2023-06-26 02:31:39,432 INFO  [RMI TCP Connection(66)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-8 - Shutdown completed.
