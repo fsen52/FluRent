@@ -18,6 +18,12 @@ spring:
     hibernate:
       ddl-auto: update
       
+flurent:
+  app:
+    jwtSecret : fluRent@987
+    jwtExpirationMs: 86400000
+      
+      
 logging:
   file:
     name: logs/flurent.log
