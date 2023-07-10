@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import com.flurent.domain.Role;
 import com.flurent.domain.User;
 import com.flurent.domain.enums.RoleType;
-import com.flurent.dto.RegisterRequest;
+import com.flurent.dto.request.RegisterRequest;
 import com.flurent.exception.ConflictException;
 import com.flurent.exception.ResourceNotFoundException;
 import com.flurent.exception.message.ErrorMessage;
@@ -36,7 +36,7 @@ public class UserService {
 		
 		Role role = roleRepository.findByName(RoleType.ROLE_CUSTOMER).orElseThrow(
 				()-> new ResourceNotFoundException(
-						String.format(ErrorMessage.RESOURCE_NOT_FOUND_MESSAGE, RoleType.ROLE_CUSTOMER.name())));
+						String.format(ErrorMessage.ROLE_NOT_FOUND_MESSAGE, RoleType.ROLE_CUSTOMER.name())));
 	
 		Set<Role> roles = new HashSet<>();
 		roles.add(role);

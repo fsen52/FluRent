@@ -1,4 +1,4 @@
-package com.flurent.dto;
+package com.flurent.dto.request;
 
 
 import javax.validation.constraints.Email;

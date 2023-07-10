@@ -90,5 +90,10 @@ public class FluRentExceptionHandler extends ResponseEntityExceptionHandler {
 	
 	}
 	
+	@ExceptionHandler(RuntimeException.class)
+	protected ResponseEntity<Object> handleGeneralException(RuntimeException ex, WebRequest request){
+		ApiResponseError error = new ApiResponseError(HttpStatus.INTERNAL_SERVER_ERROR, ex.getMessage(), request.getDescription(false));
+		return buildResponseEntity(error);
+	}
 	
 }
