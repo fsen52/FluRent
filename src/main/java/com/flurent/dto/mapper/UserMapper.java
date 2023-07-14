@@ -11,5 +11,7 @@ import com.flurent.dto.UserDTO;
 public interface UserMapper {
 	
 	List<UserDTO> map(List<User> user);
+	
+	UserDTO userToUserDTO(User user);
 
 }

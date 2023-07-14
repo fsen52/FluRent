@@ -41,6 +41,8 @@ private Long id;
 			else
 				rolesStr.add("Customer");
 		});
+		
+		this.roles=rolesStr;
 	}
 	
 	

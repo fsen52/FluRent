@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -25,7 +26,9 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class UserService {
 	
+	
 	private UserRepository userRepository;
+	
 	private RoleRepository roleRepository;
 	private PasswordEncoder passwordEncoder;
 	private UserMapper userMapper;
@@ -66,4 +69,9 @@ public class UserService {
 		return userMapper.map(users);
 	}
 	
+	public UserDTO findUserById(Long id) {
+		User user = userRepository.findById(id).orElseThrow(()-> 
+			new ResourceNotFoundException(String.format(ErrorMessage.USER_NOT_FOUND_MESSAGE, id)));
+		return userMapper.userToUserDTO(user);
+	}
 }
