@@ -1,6 +1,7 @@
 package com.flurent.service;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -9,6 +10,8 @@ import org.springframework.stereotype.Service;
 import com.flurent.domain.Role;
 import com.flurent.domain.User;
 import com.flurent.domain.enums.RoleType;
+import com.flurent.dto.UserDTO;
+import com.flurent.dto.mapper.UserMapper;
 import com.flurent.dto.request.RegisterRequest;
 import com.flurent.exception.ConflictException;
 import com.flurent.exception.ResourceNotFoundException;
@@ -25,6 +28,7 @@ public class UserService {
 	private UserRepository userRepository;
 	private RoleRepository roleRepository;
 	private PasswordEncoder passwordEncoder;
+	private UserMapper userMapper;
 	
 	public void register(RegisterRequest registerRequest) {
 		
@@ -57,4 +61,9 @@ public class UserService {
 		
 		}
 
+	public List<UserDTO> getAllUsers(){
+		List<User> users = userRepository.findAll();
+		return userMapper.map(users);
+	}
+	
 }

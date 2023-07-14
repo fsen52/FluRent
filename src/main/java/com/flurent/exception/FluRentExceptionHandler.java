@@ -3,12 +3,15 @@ package com.flurent.exception;
 import java.util.List;
 import java.util.stream.Collectors;
 
+
 import org.springframework.beans.ConversionNotSupportedException;
 import org.springframework.beans.TypeMismatchException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
+import org.springframework.security.access.AccessDeniedException;
+import org.springframework.security.core.AuthenticationException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -49,6 +52,21 @@ public class FluRentExceptionHandler extends ResponseEntityExceptionHandler {
 	
 	}
 	
+	@ExceptionHandler(AccessDeniedException.class)
+	protected ResponseEntity<Object>  handleAccessDeniedException(AccessDeniedException exception, WebRequest request){
+		ApiResponseError error = new ApiResponseError(HttpStatus.FORBIDDEN, exception.getMessage(), request.getDescription(false));
+	
+		return buildResponseEntity(error);
+	
+	}
+	
+	@ExceptionHandler(AuthenticationException.class)
+	protected ResponseEntity<Object>  handleAuthenticationException(AuthenticationException exception, WebRequest request){
+		ApiResponseError error = new ApiResponseError(HttpStatus.BAD_REQUEST, exception.getMessage(), request.getDescription(false));
+	
+		return buildResponseEntity(error);
+	
+	}
 
 	@Override
 	protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException exception,
