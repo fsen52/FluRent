@@ -23,6 +23,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.flurent.dto.UserDTO;
+import com.flurent.dto.request.AdminUserUpdateRequest;
 import com.flurent.dto.request.UpdatePasswordRequest;
 import com.flurent.dto.request.UserUpdateRequest;
 import com.flurent.dto.response.FlurentResponse;
@@ -97,6 +98,20 @@ public class UserController {
 	public ResponseEntity<FlurentResponse> updateSelfUser(HttpServletRequest httpServletRequest, @Valid @RequestBody UserUpdateRequest userUpdateRequest ){
 		Long id = (Long) httpServletRequest.getAttribute("id");
 		userService.updateUser(id, userUpdateRequest);
+		
+		FlurentResponse response=new FlurentResponse();
+		response.setMessage(ResponseMessage.UPDATE_RESPONSE_MESSAGE);
+		response.setSuccess(true);
+		
+		return ResponseEntity.ok(response);
+		
+	}
+	
+	
+	@PutMapping("/{id}/auth")
+	@PreAuthorize("hasRole('ADMIN')")
+	public ResponseEntity<FlurentResponse> adminUpdateUser(@PathVariable Long id, @Valid @RequestBody AdminUserUpdateRequest adminUserUpdateRequest ){
+		userService.adminUpdateUser(id, adminUserUpdateRequest);
 		
 		FlurentResponse response=new FlurentResponse();
 		response.setMessage(ResponseMessage.UPDATE_RESPONSE_MESSAGE);

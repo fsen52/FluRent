@@ -67,6 +67,14 @@ public class FluRentExceptionHandler extends ResponseEntityExceptionHandler {
 		return buildResponseEntity(error);
 	
 	}
+	
+	@ExceptionHandler(ImageFileException.class)
+	protected ResponseEntity<Object>  handleImageFileException(ImageFileException exception, WebRequest request){
+		ApiResponseError error = new ApiResponseError(HttpStatus.BAD_REQUEST, exception.getMessage(), request.getDescription(false));
+	
+		return buildResponseEntity(error);
+	
+	}
 
 	@Override
 	protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException exception,
