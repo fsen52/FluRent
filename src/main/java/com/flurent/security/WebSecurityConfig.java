@@ -23,41 +23,40 @@ import lombok.AllArgsConstructor;
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 @AllArgsConstructor
-public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
-	
-	private UserDetailsService userDetailsService; 
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+
+	private UserDetailsService userDetailsService;
 
 	@Override
 	public void configure(HttpSecurity http) throws Exception {
 
-		http.csrf().disable().
-		sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and().
-		authorizeRequests().antMatchers("/register","/login","/files/download/**","/files/display/**").permitAll().
-		anyRequest().authenticated();
-		
-		http.addFilterBefore(authenticationJwtTokenFilter(),UsernamePasswordAuthenticationFilter.class);
-	
-	
+		http.csrf().disable().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
+				.authorizeRequests().antMatchers("/register", "/login", "/files/download/**", "/files/display/**",
+						"/contactmessage/visitors", "/car/visitors/**")
+				.permitAll().anyRequest().authenticated();
+
+		http.addFilterBefore(authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
+
 	}
-	
+
 	@Bean
 	public AuthTokenFilter authenticationJwtTokenFilter() {
 		return new AuthTokenFilter();
 	}
-	
+
 	@Bean
 	@Override
 	protected AuthenticationManager authenticationManager() throws Exception {
 		return super.authenticationManager();
 	}
-	
+
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 
 		auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
-	
+
 	}
-	
+
 	@Bean
 	public PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();

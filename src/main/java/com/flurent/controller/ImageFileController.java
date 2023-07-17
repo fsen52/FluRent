@@ -1,5 +1,7 @@
 package com.flurent.controller;
 
+import java.util.List;
+
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -14,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.flurent.domain.ImageFile;
+import com.flurent.dto.ImageFileDTO;
 import com.flurent.dto.response.ImageSaveResponse;
 import com.flurent.dto.response.ResponseMessage;
 import com.flurent.service.ImageFileService;
@@ -63,7 +66,14 @@ public class ImageFileController {
 		return new ResponseEntity<>(image.getData(),header,HttpStatus.OK);	
 	}
 	
-	
+	@GetMapping
+	@PreAuthorize("hasRole('ADMIN')")
+	public ResponseEntity<List<ImageFileDTO>> getAllImages(){
+		
+		List<ImageFileDTO> imageList = imageFileService.getAllImages();
+		
+		return ResponseEntity.status(HttpStatus.OK).body(imageList);
+	}
 	
 	
 	
