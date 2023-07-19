@@ -17,4 +17,7 @@ public class ErrorMessage {
 	public final static String PASSWORD_NOT_MATCHED="Your password is not matched";
 	
 	public final static String IMAGE_NOT_FOUND_MESSAGE="Image file with this id %s not found";
+
+	public final static String RESERVATION_TIME_INCORRECT_MESSAGE="Reservation pick up time or drop off time is not correct";
+
 }
