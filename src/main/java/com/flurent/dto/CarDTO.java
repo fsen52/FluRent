@@ -21,7 +21,7 @@ import lombok.Setter;
 @NoArgsConstructor
 public class CarDTO {
 
-	private Long id;
+	private Long carId;
 
 	@Size(max = 30, message = "Size is exceeded")
 	@NotNull(message = "Please provide car model")
@@ -58,7 +58,7 @@ public class CarDTO {
 	private Set<String> image;
 
 	public CarDTO(Car car) {
-		this.id = car.getId();
+		this.carId = car.getId();
 		this.model = car.getModel();
 		this.doors = car.getDoors();
 		this.seats = car.getSeats();

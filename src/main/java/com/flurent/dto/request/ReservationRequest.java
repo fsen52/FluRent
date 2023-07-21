@@ -18,11 +18,11 @@ import lombok.Setter;
 @NoArgsConstructor
 public class ReservationRequest {
 	
-	@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="MM/dd/yyyy HH:mm:ss", timezone="Germany")
+	@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="dd/MM/yyyy HH:mm:ss", timezone="Germany")
 	@NotNull(message="Please provide the pick up time of the reservation")
 	private LocalDateTime pickUpTime;
 
-	@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="MM/dd/yyyy HH:mm:ss", timezone="Germany")
+	@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="dd/MM/yyyy HH:mm:ss", timezone="Germany")
 	@NotNull(message="Please provide the drop off time of the reservation")
 	private LocalDateTime dropOffTime;
 

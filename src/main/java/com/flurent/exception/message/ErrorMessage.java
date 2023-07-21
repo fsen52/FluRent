@@ -19,5 +19,8 @@ public class ErrorMessage {
 	public final static String IMAGE_NOT_FOUND_MESSAGE="Image file with this id %s not found";
 
 	public final static String RESERVATION_TIME_INCORRECT_MESSAGE="Reservation pick up time or drop off time is not correct";
+	
+	public final static String CAR_NOT_AVAILABLE_MESSAGE="Car is not available for selected time";
+
 
 }

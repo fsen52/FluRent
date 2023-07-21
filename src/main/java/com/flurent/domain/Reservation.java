@@ -36,11 +36,11 @@ public class Reservation {
 	
 	@OneToOne
 	@JoinColumn(name="car_id",referencedColumnName="id")
-	private Car carId;
+	private Car car;
 	
 	@OneToOne
 	@JoinColumn(name="user_id",referencedColumnName="id")
-	private User userId;
+	private User user;
 	
 	@Column(nullable=false)
 	private LocalDateTime pickUpTime;
