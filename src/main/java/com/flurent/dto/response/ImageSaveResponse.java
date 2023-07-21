@@ -13,6 +13,7 @@ public class ImageSaveResponse extends FlurentResponse {
 	
 	public ImageSaveResponse(String imageId, String message, boolean success) {
 			super(success,message);
+			this.imageId=imageId;
 	
 	
 	}

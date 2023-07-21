@@ -27,6 +27,11 @@ public class Role {
 	@Column(length=20)
 	private RoleType name;
 
+	@Override
+	public String toString() {
+		return  ""+name+"";
+	}
+
 	
 	
 	
