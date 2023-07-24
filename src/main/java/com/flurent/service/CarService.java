@@ -18,6 +18,7 @@ import com.flurent.exception.ResourceNotFoundException;
 import com.flurent.exception.message.ErrorMessage;
 import com.flurent.repository.CarRepository;
 import com.flurent.repository.ImageFileRepository;
+import com.flurent.repository.ReservationRepository;
 
 import lombok.AllArgsConstructor;
 
@@ -31,6 +32,8 @@ public class CarService {
 
 	private CarMapper carMapper;
 
+	private ReservationRepository reservationRepository;
+	
 	@Transactional(readOnly = true)
 	public List<CarDTO> getAllCars() {
 		List<Car> carList = carRepository.findAll();
@@ -105,6 +108,13 @@ public class CarService {
 		
 		Car foundCar = carRepository.findById(id).orElseThrow(
 				() -> new ResourceNotFoundException(String.format(ErrorMessage.RESOURCE_NOT_FOUND_MESSAGE, id)));
+		
+		boolean exists = reservationRepository.existsByCar(foundCar);
+		
+		if(exists) {
+			throw new BadRequestException(ErrorMessage.CAR_USED_BY_RESERVATION_MESSAGE);
+		}
+		
 		
 		if (foundCar.getBuiltIn()) {
 			throw new BadRequestException(ErrorMessage.NOT_PERMITTED_PROCESS_MESSAGE);

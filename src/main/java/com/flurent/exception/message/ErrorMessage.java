@@ -24,5 +24,7 @@ public class ErrorMessage {
 	
 	public final static String EXCEL_REPORT_CREATION_ERROR_MESSAGE="Error occurred while generation excel report";
 
+	public final static String CAR_USED_BY_RESERVATION_MESSAGE="Car couldn't be deleted. Because this car has a reservation";
 
+	public final static String USER_USED_BY_RESERVATION_MESSAGE="User couldn't be deleted. Because this user has a reservation";
 }

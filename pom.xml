@@ -19,6 +19,7 @@
 		<jjwt.version>0.9.1</jjwt.version>
 		<mapstruct.version>1.4.2.Final</mapstruct.version>
 		<apache.poi.version>4.1.0</apache.poi.version>
+		<springdoc.openapi.version>1.6.9</springdoc.openapi.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -82,6 +83,12 @@
 			<groupId>org.mapstruct</groupId>
 			<artifactId>mapstruct</artifactId>
 			<version>${mapstruct.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>${springdoc.openapi.version}</version>
 		</dependency>
 
 		<dependency>

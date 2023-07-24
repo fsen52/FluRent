@@ -20,9 +20,11 @@ public interface CarMapper {
 	// anotation benutzen möchten, können wir diese kode benutzen */
 
 	@Mapping(target = "image", ignore = true)
+	@Mapping(source="carId",target="id")
 	Car carDTOToCar(CarDTO carDTO);
 
 	@Mapping(source = "image", target = "image", qualifiedByName = "getImageAsString")
+	@Mapping(source="id",target="carId")
 	CarDTO carTOCarDTO(Car car);
 
 	@Named("getImageAsString")

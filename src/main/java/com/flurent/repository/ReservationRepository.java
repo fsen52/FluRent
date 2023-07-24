@@ -9,6 +9,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import com.flurent.domain.Car;
 import com.flurent.domain.Reservation;
 import com.flurent.domain.User;
 import com.flurent.domain.enums.ReservationStatus;
@@ -16,6 +17,10 @@ import com.flurent.dto.ReservationDTO;
 
 @Repository
 public interface ReservationRepository extends JpaRepository<Reservation, Long> {
+	
+	boolean existsByCar(Car car);
+	
+	boolean existsByUser(User user);
 	
 	List<ReservationDTO> findAllBy();
 	

@@ -44,3 +44,10 @@ logging:
     '[org.springframework.web]': INFO
     '[org.hibernate]': INFO
     '[com.flurent]': DEBUG
+    
+    
+info:
+  application:
+    name: 'Flurent Backend App'
+    description: 'Flurent is a car rental App'
+    version: '@project.version@'

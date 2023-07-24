@@ -1,0 +1,56 @@
+2023-07-24 02:26:33,417 INFO  [restartedMain] com.flurent.FluRentApplication:Starting FluRentApplication using Java 17.0.1 on Furkan-Notebook with PID 2248 (C:\Users\Furkan\git\FluRent\target\classes started by Furkan in C:\Users\Furkan\git\FluRent)
+2023-07-24 02:26:33,420 INFO  [restartedMain] com.flurent.FluRentApplication:The following 1 profile is active: "prod"
+2023-07-24 02:26:33,495 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-24 02:26:33,495 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-24 02:26:35,271 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-24 02:26:35,397 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 112 ms. Found 6 JPA repository interfaces.
+2023-07-24 02:26:36,169 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2023-07-24 02:26:36,179 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2023-07-24 02:26:36,179 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-07-24 02:26:36,286 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2023-07-24 02:26:36,286 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 2789 ms
+2023-07-24 02:26:36,594 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-24 02:26:36,644 INFO  [restartedMain] org.hibernate.Version:HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-07-24 02:26:36,805 INFO  [restartedMain] org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-24 02:26:36,904 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
+2023-07-24 02:26:37,099 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Start completed.
+2023-07-24 02:26:37,122 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-07-24 02:26:38,264 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-24 02:26:38,274 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-24 02:26:39,112 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-24 02:26:39,903 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-07-24 02:26:39,905 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will not secure Ant [pattern='/v3/api-docs/**']
+2023-07-24 02:26:39,905 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-07-24 02:26:39,906 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will not secure Ant [pattern='swagger-ui.html']
+2023-07-24 02:26:39,906 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-07-24 02:26:39,906 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will not secure Ant [pattern='/swagger-ui/**']
+2023-07-24 02:26:39,906 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-07-24 02:26:39,906 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will not secure Ant [pattern='/']
+2023-07-24 02:26:39,907 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='index.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-07-24 02:26:39,907 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will not secure Ant [pattern='index.html']
+2023-07-24 02:26:39,907 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-07-24 02:26:39,907 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will not secure Ant [pattern='/images/**']
+2023-07-24 02:26:39,967 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5d317331, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4cef4a91, org.springframework.security.web.context.SecurityContextPersistenceFilter@604163f0, org.springframework.security.web.header.HeaderWriterFilter@6fd7d625, org.springframework.security.web.authentication.logout.LogoutFilter@4c38c003, com.flurent.security.jwt.AuthTokenFilter@77ea8d64, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@241d0f1d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e0ae6eb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47641eff, org.springframework.security.web.session.SessionManagementFilter@359c70b5, org.springframework.security.web.access.ExceptionTranslationFilter@6ef5a842, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@42693d3e]
+2023-07-24 02:26:42,125 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2023-07-24 02:26:42,136 INFO  [restartedMain] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-07-24 02:26:42,268 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-24 02:26:42,298 INFO  [restartedMain] com.flurent.FluRentApplication:Started FluRentApplication in 9.587 seconds (JVM running for 10.851)
+2023-07-24 02:26:43,548 INFO  [RMI TCP Connection(1)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-24 02:26:43,549 INFO  [RMI TCP Connection(1)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2023-07-24 02:26:43,551 INFO  [RMI TCP Connection(1)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 2 ms
+2023-07-24 02:26:55,551 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:Application shutdown requested.
+2023-07-24 02:26:55,576 INFO  [RMI TCP Connection(3)-127.0.0.1] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2023-07-24 02:26:55,578 INFO  [RMI TCP Connection(3)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-07-24 02:26:55,583 WARN  [RMI TCP Connection(3)-127.0.0.1] org.apache.catalina.loader.WebappClassLoaderBase:The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
+2023-07-24 02:26:55,601 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-24 02:26:55,609 INFO  [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
+2023-07-24 02:26:55,616 INFO  [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.

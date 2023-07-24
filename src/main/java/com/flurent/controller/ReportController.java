@@ -45,4 +45,44 @@ public class ReportController {
 
 	}
 
+
+	@GetMapping("/download/cars")
+	@PreAuthorize("hasRole('ADMIN')")
+	public ResponseEntity<Resource> createCarsReport() {
+
+		String fileName = "cars.xlsx";
+
+		try {
+			ByteArrayInputStream bais = reportService.createCarReport();
+			InputStreamResource file = new InputStreamResource(bais);
+
+			return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=" + fileName)
+					.contentType(MediaType.parseMediaType("application/vmd.ms-excel")).body(file);
+
+		} catch (IOException e) {
+			throw new ExcelReportException(ErrorMessage.EXCEL_REPORT_CREATION_ERROR_MESSAGE);
+		}
+
+	}
+
+	@GetMapping("/download/reservations")
+	@PreAuthorize("hasRole('ADMIN')")
+	public ResponseEntity<Resource> createReservationsReport() {
+
+		String fileName = "reservations.xlsx";
+
+		try {
+			ByteArrayInputStream bais = reportService.createReservationReport();
+			InputStreamResource file = new InputStreamResource(bais);
+
+			return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=" + fileName)
+					.contentType(MediaType.parseMediaType("application/vmd.ms-excel")).body(file);
+
+		} catch (IOException e) {
+			throw new ExcelReportException(ErrorMessage.EXCEL_REPORT_CREATION_ERROR_MESSAGE);
+		}
+
+	}
+	
+	
 }

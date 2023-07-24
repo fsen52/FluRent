@@ -1,0 +1,23 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ['info','health']
+        
+  info:
+    env:
+      enabled: true
+  
+logging:
+  file:
+    name: flurent_prod.log
+  pattern:
+    file: "%d %-5level [%thread] %logger:%msg%n"
+  
+  
+  level:
+    '[org.springframework.web]': INFO
+    '[org.hibernate]': INFO
+    '[com.flurent]': INFO
+    
+    

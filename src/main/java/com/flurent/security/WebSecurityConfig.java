@@ -2,10 +2,12 @@ package com.flurent.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
@@ -31,12 +33,27 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	public void configure(HttpSecurity http) throws Exception {
 
 		http.csrf().disable().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
+				.authorizeRequests().antMatchers(HttpMethod.OPTIONS,"/**").permitAll().and()
 				.authorizeRequests().antMatchers("/register", "/login", "/files/download/**", "/files/display/**",
-						"/contactmessage/visitors", "/car/visitors/**")
+						"/contactmessage/visitors", "/car/visitors/**","/actuator/**")
 				.permitAll().anyRequest().authenticated();
 
 		http.addFilterBefore(authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
 
+	}
+
+	private static final String [] AUTH_WHITE_LIST={
+			"/v3/api-docs/**",
+			"swagger-ui.html",
+			"/swagger-ui/**",
+			"/",
+			"index.html",
+			"/images/**"
+	};
+	
+	@Override
+	public void configure(WebSecurity web) throws Exception {
+		web.ignoring().antMatchers(AUTH_WHITE_LIST);
 	}
 
 	@Bean

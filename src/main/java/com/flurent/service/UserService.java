@@ -24,6 +24,7 @@ import com.flurent.exception.BadRequestException;
 import com.flurent.exception.ConflictException;
 import com.flurent.exception.ResourceNotFoundException;
 import com.flurent.exception.message.ErrorMessage;
+import com.flurent.repository.ReservationRepository;
 import com.flurent.repository.RoleRepository;
 import com.flurent.repository.UserRepository;
 
@@ -34,7 +35,7 @@ import lombok.AllArgsConstructor;
 public class UserService {
 
 	private UserRepository userRepository;
-
+	private ReservationRepository reservationRepository;
 	private RoleRepository roleRepository;
 	private PasswordEncoder passwordEncoder;
 
@@ -149,8 +150,8 @@ public class UserService {
 	public void adminUpdateUser(Long id, AdminUserUpdateRequest adminUserUpdateRequest) {
 		boolean emailExist = userRepository.existsByEmail(adminUserUpdateRequest.getEmail());
 
-		User user = userRepository.findById(id).
-				orElseThrow(()-> new ResourceNotFoundException(String.format(ErrorMessage.RESOURCE_NOT_FOUND_MESSAGE, id)));
+		User user = userRepository.findById(id).orElseThrow(
+				() -> new ResourceNotFoundException(String.format(ErrorMessage.RESOURCE_NOT_FOUND_MESSAGE, id)));
 
 		if (user.getBuiltIn()) {
 			throw new BadRequestException(ErrorMessage.NOT_PERMITTED_PROCESS_MESSAGE);
@@ -166,21 +167,27 @@ public class UserService {
 			String encodedPassword = passwordEncoder.encode(adminUserUpdateRequest.getPassword());
 			adminUserUpdateRequest.setPassword(encodedPassword);
 		}
-		
+
 		Set<String> userStrRoles = adminUserUpdateRequest.getRoles();
-		Set<Role> roles=convertRoles(userStrRoles);
-		
+		Set<Role> roles = convertRoles(userStrRoles);
+
 		User updatedUser = userMapper.adminUserUpdateRequestToUser(adminUserUpdateRequest);
-		
+
 		updatedUser.setId(user.getId());
 		updatedUser.setRoles(roles);
-		
+
 		userRepository.save(updatedUser);
 	}
 
 	public void removeById(Long id) {
 		User user = userRepository.findById(id).orElseThrow(
 				() -> new ResourceNotFoundException(String.format(ErrorMessage.RESOURCE_NOT_FOUND_MESSAGE, id)));
+
+		boolean exists = reservationRepository.existsByUser(user);
+
+		if (exists) {
+			throw new BadRequestException(ErrorMessage.USER_USED_BY_RESERVATION_MESSAGE);
+		}
 
 		if (user.getBuiltIn()) {
 			throw new BadRequestException(ErrorMessage.NOT_PERMITTED_PROCESS_MESSAGE);

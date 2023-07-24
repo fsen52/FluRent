@@ -6,8 +6,12 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import com.flurent.domain.Car;
+import com.flurent.domain.Reservation;
 import com.flurent.domain.User;
 import com.flurent.helper.ExcelReportHelper;
+import com.flurent.repository.CarRepository;
+import com.flurent.repository.ReservationRepository;
 import com.flurent.repository.UserRepository;
 
 import lombok.AllArgsConstructor;
@@ -17,6 +21,10 @@ import lombok.AllArgsConstructor;
 public class ReportService {
 	
 	UserRepository userRepository;
+	
+	CarRepository carRepository;	
+	
+	ReservationRepository	reservationRepository;
 	
 	
 	public ByteArrayInputStream createUserReport() throws IOException{
@@ -28,6 +36,21 @@ public class ReportService {
 	}
 	
 	
+	public ByteArrayInputStream createCarReport() throws IOException{
+		List<Car> cars = carRepository.findAll();
+		
+		return ExcelReportHelper.createCarsExcelReport(cars);
+		
+		
+	}
+	
+	public ByteArrayInputStream createReservationReport() throws IOException{
+		List<Reservation> reservations = reservationRepository.findAll();
+		
+		return ExcelReportHelper.createReservationsExcelReport(reservations);
+		
+		
+	}
 	
 	
 
