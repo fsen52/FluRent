@@ -19,6 +19,12 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
+    properties:
+     format-sql: true      
+
+#    open-in-view: false 
+#   Wenn true sein, "lazy"" nicht funktioniert.
+    
       
   servlet:
     multipart:
@@ -26,7 +32,7 @@ spring:
       max-request-size: 2MB
         
         
-      
+              
 flurent:
   app:
     jwtSecret : fluRent@987

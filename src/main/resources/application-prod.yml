@@ -1,3 +1,26 @@
+spring:
+  datasource:
+    url:  jdbc:postgresql://${HOST}:${PORT}/${DBNAME}
+    username: ${DBUSERNAME}
+    password: ${DBPASSWORD}
+    driver-class-name: org.postgresql.Driver
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    
+    
+flurent:
+  app:
+    jwtSecret : ${SECRETKEY}
+    jwtExpirationMs: ${EXPIRATIONTIME}
+  
+
+
+
+
 management:
   endpoints:
     web:
